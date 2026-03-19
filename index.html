@@ -83,7 +83,7 @@
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
                 <div class="space-y-8 text-center lg:text-left">
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-pink-950/30 border border-pink-500/30 text-pink-400 text-sm font-medium mb-4">
-                        <i data-lucide="sparkles" class="w-4 h-4"></i> Agenda de Maio Aberta
+                        <i data-lucide="sparkles" class="w-4 h-4"></i> Agenda de Abril Aberta
                     </div>
                     <h1 class="text-5xl lg:text-7xl font-black text-white leading-[1.1] font-serif">
                         Sua história <br/>
@@ -107,7 +107,8 @@
                 
                 <!-- Imagem Hero Simulação -->
                 <div class="relative mx-auto w-full max-w-[500px] aspect-[4/5] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
-                    <img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=800&auto=format&fit=crop" alt="Tatuagem em progresso" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700">
+                    <!-- IMAGEM DE DESTAQUE AQUI -->
+                    <img src="https://drive.google.com/thumbnail?id=13p3k0IpjLtBxRupBu2k00qSJxH_ei5Z8&sz=w800" alt="Tatuagem Taylise Ink" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8 text-center group">
                         <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
                             <div class="text-left">
@@ -456,18 +457,20 @@
             return c ? c.name : 'Cliente Removido';
         };
 
-        // --- FUNÇÕES DE RENDERIZAÇÃO ---
         window.renderLandingContent = function() {
             // IMAGENS DA GRELHA DO INSTAGRAM
             // Para adicionar as suas próprias imagens do Google Drive, use este formato:
             // imgUrl: 'https://drive.google.com/thumbnail?id=SEUIDAQUI&sz=w800'
             const igPosts = [
-                { imgUrl: 'https://images.unsplash.com/photo-1562962230-16e4623d36e6?q=80&w=600&auto=format&fit=crop', link: 'https://www.instagram.com/taylise.ink/' },
-                { imgUrl: 'https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=600&auto=format&fit=crop', link: 'https://www.instagram.com/taylise.ink/' },
-                { imgUrl: 'https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?q=80&w=600&auto=format&fit=crop', link: 'https://www.instagram.com/taylise.ink/' },
-                { imgUrl: 'https://images.unsplash.com/photo-1560707303-4e980ce87606?q=80&w=600&auto=format&fit=crop', link: 'https://www.instagram.com/taylise.ink/' },
-                { imgUrl: 'https://images.unsplash.com/photo-1590246814883-578aeccfb7b2?q=80&w=600&auto=format&fit=crop', link: 'https://www.instagram.com/taylise.ink/' },
-                { imgUrl: 'https://images.unsplash.com/photo-1605335191264-a035fffece8e?q=80&w=600&auto=format&fit=crop', link: 'https://www.instagram.com/taylise.ink/' },
+                { imgUrl: 'https://drive.google.com/thumbnail?id=12GXJThriO0Pn891LysTrJZLHewrI0jmW&sz=w800', link: 'https://www.instagram.com/taylise.ink/' },
+                { imgUrl: 'https://drive.google.com/thumbnail?id=13p3k0IpjLtBxRupBu2k00qSJxH_ei5Z8&sz=w800', link: 'https://www.instagram.com/taylise.ink/' },
+                { imgUrl: 'https://drive.google.com/thumbnail?id=1GHhhA267R03ygss9mB-u2JG63l477RWF&sz=w800', link: 'https://www.instagram.com/taylise.ink/' },
+                { imgUrl: 'https://drive.google.com/thumbnail?id=1bxknO87JGCfa_s4lubJ69aZNRxeO8-lD&sz=w800', link: 'https://www.instagram.com/taylise.ink/' },
+                { imgUrl: 'https://drive.google.com/thumbnail?id=16-u0UrH1V6urAzGW7NkXuPPI_pwqMNhv&sz=w800', link: 'https://www.instagram.com/taylise.ink/' },
+                { imgUrl: 'https://drive.google.com/thumbnail?id=1RVzf3GWdkyqIZS66t531Q0XslYGPzNsN&sz=w800', link: 'https://www.instagram.com/taylise.ink/' },
+                { imgUrl: 'https://drive.google.com/thumbnail?id=1tuoTHIQeGYP2Fw2tF0hi_X8Pn0t6ho17&sz=w800', link: 'https://www.instagram.com/taylise.ink/' },
+                { imgUrl: 'https://drive.google.com/thumbnail?id=1LjzDhL3omlGu87NU36M7X21vJImHzmHd&sz=w800', link: 'https://www.instagram.com/taylise.ink/' },
+                { imgUrl: 'https://drive.google.com/thumbnail?id=17PrRz-wgHdyk2DitWShPuiSj5JlXsWv2&sz=w800', link: 'https://www.instagram.com/taylise.ink/' },
             ];
             
             const portfolioHTML = igPosts.map(post => `
