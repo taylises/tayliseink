@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-PT" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,12 +31,11 @@
     <style>
         body {
             background-color: #000;
-            color: #e4e4e7; /* zinc-200 */
+            color: #e4e4e7;
             font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             overflow-x: hidden;
         }
 
-        /* Animações e Scrollbar customizada */
         .fade-in { animation: fadeIn 0.3s ease-in-out; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         
@@ -47,7 +46,6 @@
 
         ::selection { background-color: rgba(236, 72, 153, 0.3); }
         
-        /* Fontes e utilitários */
         .font-serif { font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; }
         .hidden { display: none !important; }
     </style>
@@ -62,7 +60,8 @@
         <nav class="fixed w-full z-50 top-0 bg-black/80 backdrop-blur-md border-b border-zinc-900">
             <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 <div class="flex items-center gap-3">
-                    <i data-lucide="droplet" class="w-7 h-7 text-pink-600"></i>
+                    <!-- O SEU LOGÓTIPO ESTÁ AQUI -->
+                    <img src="90x50mm cartao tattoo (Adesivo circular) - 1.jpg" alt="Logotipo Taylise Ink" class="w-10 h-10 rounded-full object-cover border border-pink-600">
                     <span class="text-xl font-black tracking-widest uppercase text-white font-serif">Taylise Ink</span>
                 </div>
                 <!-- Desktop Menu -->
@@ -79,7 +78,6 @@
 
         <!-- HERO SECTION -->
         <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 px-6 flex items-center min-h-[90vh]">
-            <!-- Efeito de Fundo -->
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-pink-600/20 rounded-full blur-[120px] pointer-events-none"></div>
             
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
@@ -107,18 +105,16 @@
                     </div>
                 </div>
                 
-                <!-- Imagem Hero Simulação -->
                 <div class="relative mx-auto w-full max-w-[500px] aspect-[4/5] rounded-2xl overflow-hidden border border-zinc-800 shadow-2xl">
-                    <div class="absolute inset-0 bg-zinc-900 flex flex-col items-center justify-center p-8 text-center group">
-                        <i data-lucide="paintbrush" class="w-16 h-16 text-zinc-800 group-hover:text-pink-600 transition-colors duration-500 mb-6"></i>
-                        <p class="text-zinc-600 italic font-serif text-xl">"A arte de expressar o oculto."</p>
+                    
+                    <!-- IMAGEM DE DESTAQUE AQUI -->
+                    <img src="https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=800&auto=format&fit=crop" alt="Tatuagem em progresso" class="absolute inset-0 w-full h-full object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-700">
+                    
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent flex flex-col justify-end p-8 text-center group">
                         <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
                             <div class="text-left">
                                 <p class="text-pink-500 font-bold text-sm uppercase tracking-widest">Estúdio Privado</p>
-                                <p class="text-white text-xs opacity-50">Ambiente Seguro & Exclusivo</p>
-                            </div>
-                            <div class="w-12 h-12 bg-black rounded-full flex items-center justify-center border border-zinc-800">
-                                <i data-lucide="droplet" class="w-5 h-5 text-white"></i>
+                                <p class="text-white text-xs opacity-80">Ambiente Seguro & Exclusivo</p>
                             </div>
                         </div>
                     </div>
@@ -132,7 +128,8 @@
                 <div class="order-2 lg:order-1 relative aspect-square max-w-[400px] mx-auto w-full">
                     <div class="absolute inset-0 border-2 border-pink-600 rounded-2xl translate-x-4 translate-y-4"></div>
                     <div class="absolute inset-0 bg-zinc-800 rounded-2xl z-10 overflow-hidden flex items-center justify-center">
-                        <span class="text-zinc-600 font-medium">[Sua Foto Profissional Aqui]</span>
+                        <!-- A SUA FOTO PROFISSIONAL AQUI -->
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" alt="Taylise - Tatuadora" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500">
                     </div>
                 </div>
                 <div class="order-1 lg:order-2 space-y-6">
@@ -172,7 +169,7 @@
             </div>
             
             <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
-                <!-- Gerado via JS para manter o HTML limpo -->
+                <!-- Gerado via JS -->
             </div>
             
             <div class="text-center mt-12">
@@ -192,8 +189,6 @@
                 
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
                     <div class="hidden md:block absolute top-12 left-[10%] right-[10%] h-[1px] bg-gradient-to-r from-pink-900 via-pink-500 to-pink-900 opacity-30"></div>
-
-                    <!-- Steps gerados via JS -->
                     <div id="process-steps" class="contents"></div>
                 </div>
             </div>
@@ -219,45 +214,70 @@
             </div>
         </section>
 
-        <!-- FOOTER DA LANDING PAGE -->
         <footer class="bg-black py-12 border-t border-zinc-900 px-6">
             <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="flex items-center gap-2">
-                    <i data-lucide="droplet" class="w-5 h-5 text-pink-600"></i>
+                    <img src="90x50mm cartao tattoo (Adesivo circular) - 1.jpg" alt="Logotipo" class="w-6 h-6 rounded-full object-cover">
                     <span class="text-white font-bold tracking-widest uppercase">Taylise Ink</span>
                 </div>
                 <div class="text-zinc-500 text-sm text-center md:text-left">
-                    © 2026 Taylise Ink Art Studio. Todos os direitos reservados. <br class="md:hidden" />
-                    <span class="md:inline hidden"> • </span> Estúdio Privado. Atendimento com hora marcada.
+                    © 2026 Taylise Ink Art Studio. Todos os direitos reservados.
                 </div>
                 
-                <button onclick="switchView('admin')" class="text-xs text-zinc-700 hover:text-pink-500 transition-colors uppercase tracking-widest border border-zinc-800 hover:border-pink-900 px-3 py-1.5 rounded">
+                <button onclick="switchView('login')" class="text-xs text-zinc-700 hover:text-pink-500 transition-colors uppercase tracking-widest border border-zinc-800 hover:border-pink-900 px-3 py-1.5 rounded">
                     Área da Artista
                 </button>
             </div>
         </footer>
     </div>
 
+    <!-- ========================================== -->
+    <!-- 2. TELA DE LOGIN                           -->
+    <!-- ========================================== -->
+    <div id="login-screen" class="min-h-screen bg-black flex items-center justify-center p-6 hidden relative">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-900/20 via-black to-black"></div>
+        <div class="bg-zinc-950 border border-zinc-800 p-8 rounded-2xl w-full max-w-md shadow-[0_0_50px_rgba(236,72,153,0.15)] fade-in relative z-10">
+            <div class="text-center mb-8">
+                <img src="90x50mm cartao tattoo (Adesivo circular) - 1.jpg" class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-pink-600 object-cover">
+                <h2 class="text-2xl font-bold text-white font-serif">Acesso Restrito</h2>
+                <p class="text-zinc-500 text-sm mt-2">Área exclusiva do Estúdio Taylise Ink</p>
+            </div>
+            
+            <form id="login-form" onsubmit="handleLogin(event)" class="space-y-5">
+                <div>
+                    <label class="block text-sm font-medium text-zinc-400 mb-2">Senha de Acesso</label>
+                    <div class="relative">
+                        <i data-lucide="lock" class="w-5 h-5 absolute left-3 top-3.5 text-zinc-500"></i>
+                        <input type="password" id="password-input" required class="w-full bg-zinc-900 border border-zinc-800 rounded-lg pl-10 pr-4 py-3 text-white outline-none focus:border-pink-500 transition-colors" placeholder="••••••••">
+                    </div>
+                    <p id="login-error" class="text-red-500 text-sm mt-2 hidden">Senha incorreta. Tente novamente.</p>
+                </div>
+                <button type="submit" class="w-full bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 rounded-lg transition-colors flex justify-center items-center gap-2 shadow-[0_0_15px_rgba(236,72,153,0.4)]">
+                    Entrar no Sistema <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                </button>
+                <button type="button" onclick="switchView('landing')" class="w-full text-zinc-500 hover:text-white text-sm py-2 transition-colors">
+                    Voltar ao Site Público
+                </button>
+            </form>
+        </div>
+    </div>
+
 
     <!-- ========================================== -->
-    <!-- 2. ÁREA DA ARTISTA (PAINEL DE GESTÃO)      -->
+    <!-- 3. ÁREA DA ARTISTA (PAINEL DE GESTÃO)      -->
     <!-- ========================================== -->
     <div id="admin-dashboard" class="flex h-screen overflow-hidden hidden">
-        
-        <!-- Sidebar Overlay (Mobile) -->
         <div id="mobile-overlay" class="lg:hidden fixed inset-0 bg-black/80 z-40 hidden" onclick="toggleMobileMenu()"></div>
 
-        <!-- Botão Menu Mobile -->
-        <button onclick="toggleMobileMenu()" class="lg:hidden fixed top-4 right-4 z-50 p-2 bg-zinc-900 border border-zinc-800 rounded-lg text-white">
+        <button onclick="toggleMobileMenu()" class="lg:hidden fixed top-4 right-4 z-50 p-2 bg-zinc-900 border border-zinc-800 rounded-lg text-white shadow-[0_0_10px_rgba(236,72,153,0.3)]">
             <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
         </button>
 
-        <!-- Sidebar Lateral -->
         <aside id="sidebar" class="fixed lg:static inset-y-0 left-0 z-40 w-72 bg-zinc-950 border-r border-zinc-800 flex flex-col transition-transform duration-300 ease-in-out -translate-x-full lg:translate-x-0">
             <div class="p-8 border-b border-zinc-800/50 flex flex-col items-center">
-                <i data-lucide="droplet" class="w-8 h-8 text-pink-600 mb-2"></i>
+                <img src="90x50mm cartao tattoo (Adesivo circular) - 1.jpg" class="w-16 h-16 rounded-full mb-3 object-cover border-2 border-pink-600">
                 <h1 class="text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-rose-400 tracking-wider text-center font-serif">TAYLISE INK</h1>
-                <span class="text-xs text-zinc-500 mt-1">Admin Panel</span>
+                <span class="text-xs text-zinc-500 mt-1 uppercase tracking-widest">Painel Admin</span>
             </div>
             
             <nav class="flex-1 px-4 py-6 space-y-2 overflow-y-auto" id="admin-nav">
@@ -265,38 +285,32 @@
                     <i data-lucide="layout-dashboard" class="w-5 h-5"></i> <span class="font-medium">Painel Geral</span>
                 </button>
                 <button onclick="changeAdminTab('appointments')" id="nav-appointments" class="nav-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-zinc-400 hover:bg-zinc-800">
-                    <i data-lucide="calendar" class="w-5 h-5"></i> <span class="font-medium">Agenda</span>
+                    <i data-lucide="calendar" class="w-5 h-5"></i> <span class="font-medium">Agenda de Sessões</span>
                 </button>
                 <button onclick="changeAdminTab('clients')" id="nav-clients" class="nav-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-zinc-400 hover:bg-zinc-800">
-                    <i data-lucide="users" class="w-5 h-5"></i> <span class="font-medium">Clientes</span>
+                    <i data-lucide="users" class="w-5 h-5"></i> <span class="font-medium">Meus Clientes</span>
                 </button>
                 <button onclick="changeAdminTab('inventory')" id="nav-inventory" class="nav-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-zinc-400 hover:bg-zinc-800">
-                    <i data-lucide="package" class="w-5 h-5"></i> <span class="font-medium">Estoque</span>
+                    <i data-lucide="package" class="w-5 h-5"></i> <span class="font-medium">Estoque & Materiais</span>
                 </button>
             </nav>
             
             <div class="p-4 border-t border-zinc-800">
-                <button onclick="switchView('landing')" class="w-full py-2 text-sm text-zinc-400 hover:text-white flex justify-center items-center gap-2">
-                    Voltar ao Site
+                <button onclick="switchView('login')" class="w-full py-3 text-sm text-zinc-400 hover:text-white hover:bg-zinc-900 rounded-lg flex justify-center items-center gap-2 transition-colors border border-zinc-800">
+                    <i data-lucide="log-out" class="w-4 h-4"></i> Terminar Sessão
                 </button>
             </div>
         </aside>
 
-        <!-- Conteúdo Principal do Painel -->
         <main class="flex-1 overflow-y-auto bg-black bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-900/40 via-black to-black p-6 lg:p-10 pt-20 lg:pt-10 relative">
-            
-            <!-- Views -->
             <div id="view-dashboard" class="admin-view fade-in"></div>
             <div id="view-clients" class="admin-view fade-in hidden"></div>
             <div id="view-appointments" class="admin-view fade-in hidden"></div>
             <div id="view-inventory" class="admin-view fade-in hidden"></div>
-
         </main>
     </div>
 
-    <!-- ========================================== -->
-    <!-- 3. MODAL DE CADASTRO / EDIÇÃO              -->
-    <!-- ========================================== -->
+    <!-- MODAL DE CADASTRO / EDIÇÃO -->
     <div id="app-modal" class="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4 hidden">
         <div class="bg-zinc-900 border border-zinc-800 rounded-2xl w-full max-w-md overflow-hidden shadow-[0_0_30px_rgba(0,0,0,0.8)] border-t-4 border-t-pink-600 fade-in">
             <div class="flex justify-between items-center p-4 border-b border-zinc-800 bg-zinc-950">
@@ -304,134 +318,189 @@
                 <button onclick="closeModal()" class="text-zinc-400 hover:text-white"><i data-lucide="x" class="w-6 h-6"></i></button>
             </div>
             <div class="p-6">
-                <!-- O Formulário será injetado aqui via JavaScript -->
                 <form id="dynamic-form" onsubmit="handleFormSubmit(event)" class="space-y-4"></form>
             </div>
         </div>
     </div>
 
     <!-- ========================================== -->
-    <!-- 4. LÓGICA E ESTADOS (JAVASCRIPT)           -->
+    <!-- LÓGICA E FIREBASE (BANCO DE DADOS REAL)    -->
     <!-- ========================================== -->
-    <script>
-        // --- DADOS INICIAIS (MOCK) ---
-        let clients = [
-            { id: 1, name: 'João Silva', phone: '(11) 99999-9999', email: 'joao@email.com', notes: 'Quer fechar o braço com tema oriental.' },
-            { id: 2, name: 'Maria Souza', phone: '(11) 98888-8888', email: 'maria@email.com', notes: 'Alergia a tinta vermelha.' },
-        ];
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, collection, onSnapshot, doc, setDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        let appointments = [
-            { id: 1, clientId: 1, date: '2026-03-20', time: '14:00', description: 'Sessão 1/3 - Dragão antebraço', price: '800.00', status: 'Agendado' },
-            { id: 2, clientId: 2, date: '2026-03-22', time: '10:00', description: 'Borboleta fine line costela', price: '350.00', status: 'Agendado' },
-        ];
+        // AS SUAS CHAVES DO FIREBASE
+        const firebaseConfig = {
+            apiKey: "AIzaSyBQb3RPmk3lDPPVl8SU-JJ5Y3KQaHF8DCw",
+            authDomain: "tayliseink.firebaseapp.com",
+            projectId: "tayliseink",
+            storageBucket: "tayliseink.firebasestorage.app",
+            messagingSenderId: "31098743333",
+            appId: "1:31098743333:web:5092ec107a1de007ecedcc",
+            measurementId: "G-ECZ247MHT9"
+        };
 
-        let inventory = [
-            { id: 1, name: 'Agulha RL 03', category: 'Agulhas', quantity: 50, minQuantity: 20 },
-            { id: 2, name: 'Tinta Preta (Dynamic)', category: 'Tintas', quantity: 2, minQuantity: 3 },
-            { id: 3, name: 'Luva Preta (M)', category: 'Descartáveis', quantity: 1, minQuantity: 2 },
-            { id: 4, name: 'Batoques P', category: 'Descartáveis', quantity: 500, minQuantity: 100 },
-        ];
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
 
-        // --- ESTADOS ---
-        let currentModalType = ''; 
-        let currentEditingId = null;
-        let isMobileMenuOpen = false;
+        // --- ESTADOS GLOBAIS ---
+        window.clients = [];
+        window.appointments = [];
+        window.inventory = [];
+        window.currentModalType = ''; 
+        window.currentEditingId = null;
+        window.isMobileMenuOpen = false;
 
-        // --- INICIALIZAÇÃO E UTILITÁRIOS ---
+        // Função que inicia a escuta ao banco de dados real
+        const startFirestoreListeners = () => {
+            // Ouvir Clientes
+            onSnapshot(collection(db, 'clients'), (snapshot) => {
+                window.clients = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                if (!document.getElementById('admin-dashboard').classList.contains('hidden')) window.renderAllAdminViews();
+            }, (error) => console.error("Erro ao carregar clientes:", error));
+
+            // Ouvir Agenda
+            onSnapshot(collection(db, 'appointments'), (snapshot) => {
+                window.appointments = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                if (!document.getElementById('admin-dashboard').classList.contains('hidden')) window.renderAllAdminViews();
+            }, (error) => console.error("Erro ao carregar agenda:", error));
+
+            // Ouvir Estoque
+            onSnapshot(collection(db, 'inventory'), (snapshot) => {
+                window.inventory = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+                if (!document.getElementById('admin-dashboard').classList.contains('hidden')) window.renderAllAdminViews();
+            }, (error) => console.error("Erro ao carregar estoque:", error));
+        };
+
+        // --- SINCRONIZAÇÃO COM TRATAMENTO DE ERRO ---
+        signInAnonymously(auth)
+            .then(() => {
+                console.log("Conectado à Nuvem do Taylise Ink!");
+                startFirestoreListeners();
+            })
+            .catch((error) => {
+                // TRATAMENTO DE ERRO: Se o Login Anônimo não estiver ativo, avisa no console mas continua carregando.
+                if (error.code === 'auth/configuration-not-found' || error.code === 'auth/admin-restricted-operation') {
+                    console.warn("⚠️ AVISO: O login 'Anônimo' não está ativado no Firebase.");
+                    console.warn("Vá em: Firebase Console -> Authentication -> Sign-in method -> Adicionar novo provedor -> Anônimo -> Ativar.");
+                } else {
+                    console.error("Erro no Firebase Auth:", error);
+                }
+                
+                // Mesmo dando erro no Auth, como as suas regras do Firestore estão "if true", 
+                // nós podemos tentar carregar os dados livremente!
+                console.log("Tentando acessar o Banco de Dados como visitante...");
+                startFirestoreListeners();
+            });
+
+        // --- INICIALIZAÇÃO ---
         document.addEventListener('DOMContentLoaded', () => {
-            renderLandingContent();
-            renderAllAdminViews();
+            window.renderLandingContent();
             lucide.createIcons();
         });
 
-        function formatCurrency(value) {
-            return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);
-        }
+        // --- SISTEMA DE LOGIN ---
+        window.handleLogin = function(e) {
+            e.preventDefault();
+            const passInput = document.getElementById('password-input').value;
+            const errorMsg = document.getElementById('login-error');
+            
+            // Senha do sistema (Pode alterar aqui se quiser)
+            if(passInput === 'Taylise2026') {
+                errorMsg.classList.add('hidden');
+                document.getElementById('password-input').value = ''; 
+                window.switchView('admin');
+            } else {
+                errorMsg.classList.remove('hidden');
+            }
+        };
 
-        function getClientName(id) {
-            const c = clients.find(c => c.id == id);
-            return c ? c.name : 'Cliente Removido';
-        }
-
-        // --- NAVEGAÇÃO ENTRE TELAS ---
-        function switchView(view) {
+        // --- NAVEGAÇÃO E UI ---
+        window.switchView = function(view) {
             const landing = document.getElementById('landing-page');
+            const login = document.getElementById('login-screen');
             const admin = document.getElementById('admin-dashboard');
             
-            if (view === 'admin') {
-                landing.classList.add('hidden');
+            landing.classList.add('hidden');
+            login.classList.add('hidden');
+            admin.classList.add('hidden');
+
+            if (view === 'login') {
+                login.classList.remove('hidden');
+            } else if (view === 'admin') {
                 admin.classList.remove('hidden');
-                renderAllAdminViews(); // Atualiza dados ao entrar
+                window.renderAllAdminViews(); 
             } else {
-                admin.classList.add('hidden');
                 landing.classList.remove('hidden');
             }
             window.scrollTo(0,0);
-        }
+        };
 
-        function toggleMobileMenu() {
-            isMobileMenuOpen = !isMobileMenuOpen;
+        window.toggleMobileMenu = function() {
+            window.isMobileMenuOpen = !window.isMobileMenuOpen;
             const sidebar = document.getElementById('sidebar');
             const overlay = document.getElementById('mobile-overlay');
             const icon = document.getElementById('menu-icon');
             
-            if (isMobileMenuOpen) {
+            if (window.isMobileMenuOpen) {
                 sidebar.classList.remove('-translate-x-full');
                 overlay.classList.remove('hidden');
-                // Atualiza ícone pra X
                 icon.setAttribute('data-lucide', 'x');
             } else {
                 sidebar.classList.add('-translate-x-full');
                 overlay.classList.add('hidden');
-                // Atualiza ícone pra Menu
                 icon.setAttribute('data-lucide', 'menu');
             }
             lucide.createIcons();
-        }
+        };
 
-        function changeAdminTab(tabId) {
-            // Esconde todas as views
+        window.changeAdminTab = function(tabId) {
             document.querySelectorAll('.admin-view').forEach(el => el.classList.add('hidden'));
-            // Mostra a selecionada
             document.getElementById(`view-${tabId}`).classList.remove('hidden');
             
-            // Atualiza botões do menu
             document.querySelectorAll('.nav-btn').forEach(btn => {
                 btn.className = 'nav-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-zinc-400 hover:bg-zinc-800';
             });
             document.getElementById(`nav-${tabId}`).className = 'nav-btn w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all bg-pink-600/10 text-pink-500 border border-pink-500/30';
             
-            if(window.innerWidth < 1024) toggleMobileMenu(); // Fecha menu em mobile
+            if(window.innerWidth < 1024) window.toggleMobileMenu(); 
             lucide.createIcons();
-        }
+        };
 
-        // --- RENDERIZAÇÃO DE COMPONENTES ---
+        // --- FORMATAÇÕES ---
+        window.formatCurrency = function(value) {
+            return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);
+        };
 
-        // Landing Page
-        function renderLandingContent() {
-            // Portfólio
+        window.getClientName = function(id) {
+            const c = window.clients.find(c => c.id == id);
+            return c ? c.name : 'Cliente Removido';
+        };
+
+        // --- FUNÇÕES DE RENDERIZAÇÃO ---
+        window.renderLandingContent = function() {
             const portfolioItems = [
-                { tag: 'Fine Line', desc: 'Traços Finos & Botânica' },
-                { tag: 'Blackwork', desc: 'Sombras e Contraste Alto' },
-                { tag: 'Dark Art', desc: 'Arame Farpado & Elementos Dark' },
-                { tag: 'Lettering', desc: 'Tipografia Exclusiva' },
-                { tag: 'Minimalista', desc: 'Micro Realismo e Detalhes' },
-                { tag: 'Cobertura', desc: 'Cover Up / Reformas' },
+                { tag: 'Fine Line', desc: 'Traços Finos & Botânica', imgUrl: 'https://images.unsplash.com/photo-1562962230-16e4623d36e6?q=80&w=600&auto=format&fit=crop' },
+                { tag: 'Blackwork', desc: 'Sombras e Contraste Alto', imgUrl: 'https://images.unsplash.com/photo-1598371839696-5c5bb00bdc28?q=80&w=600&auto=format&fit=crop' },
+                { tag: 'Dark Art', desc: 'Arame Farpado & Elementos Dark', imgUrl: 'https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?q=80&w=600&auto=format&fit=crop' },
+                { tag: 'Lettering', desc: 'Tipografia Exclusiva', imgUrl: 'https://images.unsplash.com/photo-1560707303-4e980ce87606?q=80&w=600&auto=format&fit=crop' },
+                { tag: 'Minimalista', desc: 'Micro Realismo e Detalhes', imgUrl: 'https://images.unsplash.com/photo-1590246814883-578aeccfb7b2?q=80&w=600&auto=format&fit=crop' },
+                { tag: 'Cobertura', desc: 'Cover Up / Reformas', imgUrl: 'https://images.unsplash.com/photo-1605335191264-a035fffece8e?q=80&w=600&auto=format&fit=crop' },
             ];
             const portfolioHTML = portfolioItems.map(item => `
                 <div class="group relative aspect-square bg-zinc-900 rounded-xl overflow-hidden border border-zinc-800 cursor-pointer">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex flex-col justify-end p-6">
+                    <img src="${item.imgUrl}" alt="${item.tag}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex flex-col justify-end p-6">
                         <span class="text-pink-500 font-bold text-sm mb-1">${item.tag}</span>
                         <p class="text-white font-medium text-lg">${item.desc}</p>
-                    </div>
-                    <div class="absolute inset-0 flex items-center justify-center text-zinc-800 group-hover:scale-110 transition-transform duration-500">
-                        <i data-lucide="paintbrush" class="w-12 h-12"></i>
                     </div>
                 </div>
             `).join('');
             document.getElementById('portfolio-grid').innerHTML = portfolioHTML;
 
-            // Processos
             const steps = [
                 { step: '1', title: 'A Ideia', desc: 'Você me conta sua referência, tamanho e local do corpo.' },
                 { step: '2', title: 'O Orçamento', desc: 'Alinhamos os valores e fechamos a data da sessão.' },
@@ -448,27 +517,26 @@
                 </div>
             `).join('');
             document.getElementById('process-steps').innerHTML = stepsHTML;
-        }
+        };
 
-        // Admin Views
-        function renderAllAdminViews() {
-            renderDashboard();
-            renderClients();
-            renderAppointments();
-            renderInventory();
+        window.renderAllAdminViews = function() {
+            window.renderDashboard();
+            window.renderClients();
+            window.renderAppointments();
+            window.renderInventory();
             lucide.createIcons();
-        }
+        };
 
-        function renderDashboard() {
-            const lowStockItems = inventory.filter(i => i.quantity <= i.minQuantity);
-            const upcomingApts = appointments.filter(a => a.date >= new Date().toISOString().split('T')[0]).slice(0, 5);
+        window.renderDashboard = function() {
+            const lowStockItems = window.inventory.filter(i => i.quantity <= i.minQuantity);
+            const upcomingApts = window.appointments.filter(a => a.date >= new Date().toISOString().split('T')[0]).slice(0, 5);
 
             document.getElementById('view-dashboard').innerHTML = `
                 <h2 class="text-3xl font-bold text-white mb-6" style="text-shadow: 0 0 10px rgba(236,72,153,0.5)">Visão Geral</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="bg-zinc-900 border border-zinc-800 p-6 rounded-xl shadow-lg border-l-4 border-l-pink-600">
                         <div class="flex items-center justify-between">
-                            <div><p class="text-zinc-400 text-sm">Total de Clientes</p><p class="text-3xl font-bold text-white mt-1">${clients.length}</p></div>
+                            <div><p class="text-zinc-400 text-sm">Total de Clientes</p><p class="text-3xl font-bold text-white mt-1">${window.clients.length}</p></div>
                             <div class="p-3 bg-pink-950/30 rounded-lg text-pink-500"><i data-lucide="users" class="w-6 h-6"></i></div>
                         </div>
                     </div>
@@ -488,17 +556,17 @@
                     </div>
                 </div>
             `;
-        }
+        };
 
-        function renderClients() {
+        window.renderClients = function() {
             let html = `
                 <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-3xl font-bold text-white">Clientes</h2>
-                    <button onclick="openModal('client')" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-all"><i data-lucide="plus" class="w-5 h-5"></i> Novo Cliente</button>
+                    <h2 class="text-3xl font-bold text-white" style="text-shadow: 0 0 10px rgba(236,72,153,0.5)">Meus Clientes</h2>
+                    <button onclick="openModal('client')" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 transition-all shadow-[0_0_15px_rgba(236,72,153,0.3)]"><i data-lucide="plus" class="w-5 h-5"></i> Novo Cliente</button>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             `;
-            clients.forEach(c => {
+            window.clients.forEach(c => {
                 html += `
                     <div class="bg-zinc-900 border border-zinc-800 p-5 rounded-xl hover:border-pink-900 transition-colors group">
                         <h3 class="text-xl font-bold text-pink-100 mb-2">${c.name}</h3>
@@ -506,90 +574,126 @@
                         <p class="text-zinc-400 text-sm mb-3">✉️ ${c.email}</p>
                         <div class="bg-zinc-950 p-3 rounded-lg text-sm text-zinc-300 min-h-[60px] mb-4">${c.notes || '<span class="text-zinc-600 italic">Sem observações...</span>'}</div>
                         <div class="flex justify-end gap-2">
-                            <button onclick="openModal('client', ${c.id})" class="p-2 text-zinc-400 hover:text-pink-500 bg-zinc-800 rounded-lg"><i data-lucide="edit-3" class="w-4 h-4"></i></button>
-                            <button onclick="deleteItem('client', ${c.id})" class="p-2 text-zinc-400 hover:text-red-500 bg-zinc-800 rounded-lg"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
+                            <button onclick="openModal('client', '${c.id}')" class="p-2 text-zinc-400 hover:text-pink-500 bg-zinc-800 rounded-lg"><i data-lucide="edit-3" class="w-4 h-4"></i></button>
+                            <button onclick="deleteItem('client', '${c.id}')" class="p-2 text-zinc-400 hover:text-red-500 bg-zinc-800 rounded-lg"><i data-lucide="trash-2" class="w-4 h-4"></i></button>
                         </div>
                     </div>
                 `;
             });
             html += `</div>`;
             document.getElementById('view-clients').innerHTML = html;
-        }
+        };
 
-        function renderAppointments() {
+        window.renderAppointments = function() {
             let html = `
                 <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-3xl font-bold text-white">Agenda</h2>
-                    <button onclick="openModal('appointment')" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg flex items-center gap-2"><i data-lucide="plus" class="w-5 h-5"></i> Agendar Sessão</button>
+                    <h2 class="text-3xl font-bold text-white" style="text-shadow: 0 0 10px rgba(236,72,153,0.5)">Agenda</h2>
+                    <button onclick="openModal('appointment')" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 shadow-[0_0_15px_rgba(236,72,153,0.3)]"><i data-lucide="plus" class="w-5 h-5"></i> Agendar Sessão</button>
                 </div>
-                <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden p-4">
+                <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-zinc-950 text-zinc-400 text-sm uppercase tracking-wider">
+                                    <th class="p-4 font-medium border-b border-zinc-800">Data/Hora</th>
+                                    <th class="p-4 font-medium border-b border-zinc-800">Cliente</th>
+                                    <th class="p-4 font-medium border-b border-zinc-800">Descrição</th>
+                                    <th class="p-4 font-medium border-b border-zinc-800">Valor</th>
+                                    <th class="p-4 font-medium border-b border-zinc-800 text-center">Status</th>
+                                    <th class="p-4 font-medium border-b border-zinc-800 text-right">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-zinc-800">
             `;
             
-            const sorted = [...appointments].sort((a,b) => new Date(a.date) - new Date(b.date));
-            if(sorted.length === 0) html += `<p class="p-4 text-zinc-500 text-center">Nenhum agendamento.</p>`;
+            const sorted = [...window.appointments].sort((a,b) => new Date(a.date) - new Date(b.date));
+            if(sorted.length === 0) html += `<tr><td colspan="6" class="p-8 text-center text-zinc-500">Nenhuma sessão agendada.</td></tr>`;
 
             sorted.forEach(a => {
                 const parts = a.date.split('-');
-                const brDate = `${parts[2]}/${parts[1]}/${parts[0]}`;
+                const brDate = parts.length === 3 ? `${parts[2]}/${parts[1]}/${parts[0]}` : a.date;
+                const statusClass = a.status === 'Concluído' ? 'bg-green-900/30 text-green-400 border border-green-800' : 'bg-pink-900/30 text-pink-400 border border-pink-800';
                 html += `
-                    <div class="flex justify-between items-center p-4 border-b border-zinc-800 hover:bg-zinc-800/30">
-                        <div>
-                            <p class="text-pink-400 font-bold">${brDate} às ${a.time} <span class="ml-2 px-2 py-0.5 text-[10px] rounded-full bg-zinc-800 text-zinc-300 uppercase">${a.status}</span></p>
-                            <p class="text-white font-medium">${getClientName(a.clientId)} <span class="text-zinc-500 font-normal ml-1">- ${a.description}</span></p>
-                        </div>
-                        <div class="flex gap-2">
-                            <button onclick="openModal('appointment', ${a.id})" class="text-zinc-400 hover:text-pink-500"><i data-lucide="edit-3" class="w-5 h-5"></i></button>
-                            <button onclick="deleteItem('appointment', ${a.id})" class="text-zinc-400 hover:text-red-500"><i data-lucide="trash-2" class="w-5 h-5"></i></button>
-                        </div>
-                    </div>
+                    <tr class="hover:bg-zinc-800/30 transition-colors">
+                        <td class="p-4 whitespace-nowrap">
+                            <div class="text-pink-400 font-bold">${brDate}</div>
+                            <div class="text-zinc-500 text-sm">${a.time}</div>
+                        </td>
+                        <td class="p-4 text-white font-medium">${window.getClientName(a.clientId)}</td>
+                        <td class="p-4 text-zinc-300">${a.description}</td>
+                        <td class="p-4 text-zinc-300">${window.formatCurrency(a.price)}</td>
+                        <td class="p-4 text-center">
+                            <span class="px-2 py-1 text-xs rounded-full ${statusClass}">${a.status}</span>
+                        </td>
+                        <td class="p-4 text-right">
+                            <button onclick="openModal('appointment', '${a.id}')" class="p-2 text-zinc-400 hover:text-pink-500 inline-block"><i data-lucide="edit-3" class="w-5 h-5"></i></button>
+                            <button onclick="deleteItem('appointment', '${a.id}')" class="p-2 text-zinc-400 hover:text-red-500 inline-block ml-2"><i data-lucide="trash-2" class="w-5 h-5"></i></button>
+                        </td>
+                    </tr>
                 `;
             });
-            html += `</div>`;
+            html += `</tbody></table></div></div>`;
             document.getElementById('view-appointments').innerHTML = html;
-        }
+        };
 
-        function renderInventory() {
+        window.renderInventory = function() {
             let html = `
                 <div class="flex justify-between items-center mb-6">
-                    <h2 class="text-3xl font-bold text-white">Estoque</h2>
-                    <button onclick="openModal('inventory')" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg flex items-center gap-2"><i data-lucide="plus" class="w-5 h-5"></i> Adicionar Item</button>
+                    <h2 class="text-3xl font-bold text-white" style="text-shadow: 0 0 10px rgba(236,72,153,0.5)">Estoque</h2>
+                    <button onclick="openModal('inventory')" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-lg flex items-center gap-2 shadow-[0_0_15px_rgba(236,72,153,0.3)]"><i data-lucide="plus" class="w-5 h-5"></i> Adicionar Item</button>
                 </div>
-                <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden p-4">
+                <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden">
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr class="bg-zinc-950 text-zinc-400 text-sm uppercase tracking-wider">
+                                    <th class="p-4 font-medium border-b border-zinc-800">Item</th>
+                                    <th class="p-4 font-medium border-b border-zinc-800">Categoria</th>
+                                    <th class="p-4 font-medium border-b border-zinc-800 text-center">Qtd. Atual</th>
+                                    <th class="p-4 font-medium border-b border-zinc-800 text-center">Qtd. Mínima</th>
+                                    <th class="p-4 font-medium border-b border-zinc-800 text-center">Status</th>
+                                    <th class="p-4 font-medium border-b border-zinc-800 text-right">Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-zinc-800">
             `;
-            if(inventory.length === 0) html += `<p class="p-4 text-zinc-500 text-center">Estoque vazio.</p>`;
+            if(window.inventory.length === 0) html += `<tr><td colspan="6" class="p-8 text-center text-zinc-500">Estoque vazio.</td></tr>`;
 
-            inventory.forEach(i => {
+            window.inventory.forEach(i => {
                 const isLow = i.quantity <= i.minQuantity;
                 html += `
-                    <div class="flex justify-between items-center p-4 border-b border-zinc-800 hover:bg-zinc-800/30 ${isLow ? 'bg-red-950/10' : ''}">
-                        <div>
-                            <p class="text-white font-medium">${i.name} ${isLow ? '<span class="ml-2 text-[10px] text-red-500 border border-red-500/50 px-1 rounded uppercase">Comprar</span>' : ''}</p>
-                            <p class="text-zinc-400 text-sm">Atual: <strong class="${isLow ? 'text-red-400' : 'text-white'}">${i.quantity}</strong> (Mín: ${i.minQuantity}) - ${i.category}</p>
-                        </div>
-                        <div class="flex gap-2">
-                            <button onclick="openModal('inventory', ${i.id})" class="text-zinc-400 hover:text-pink-500"><i data-lucide="edit-3" class="w-5 h-5"></i></button>
-                            <button onclick="deleteItem('inventory', ${i.id})" class="text-zinc-400 hover:text-red-500"><i data-lucide="trash-2" class="w-5 h-5"></i></button>
-                        </div>
-                    </div>
+                    <tr class="hover:bg-zinc-800/30 transition-colors">
+                        <td class="p-4 text-white font-medium">${i.name}</td>
+                        <td class="p-4 text-zinc-400">${i.category}</td>
+                        <td class="p-4 text-center font-bold text-lg ${isLow ? 'text-red-500' : 'text-zinc-200'}">${i.quantity}</td>
+                        <td class="p-4 text-center text-zinc-500">${i.minQuantity}</td>
+                        <td class="p-4 text-center">
+                            ${isLow 
+                                ? '<span class="inline-flex items-center gap-1 px-2 py-1 bg-red-950/50 text-red-400 text-xs rounded-full border border-red-900"><i data-lucide="alert-triangle" class="w-3 h-3"></i> Comprar</span>' 
+                                : '<span class="px-2 py-1 bg-zinc-800 text-zinc-400 text-xs rounded-full">OK</span>'}
+                        </td>
+                        <td class="p-4 text-right">
+                            <button onclick="openModal('inventory', '${i.id}')" class="p-2 text-zinc-400 hover:text-pink-500 inline-block"><i data-lucide="edit-3" class="w-5 h-5"></i></button>
+                            <button onclick="deleteItem('inventory', '${i.id}')" class="p-2 text-zinc-400 hover:text-red-500 inline-block ml-2"><i data-lucide="trash-2" class="w-5 h-5"></i></button>
+                        </td>
+                    </tr>
                 `;
             });
-            html += `</div>`;
+            html += `</tbody></table></div></div>`;
             document.getElementById('view-inventory').innerHTML = html;
-        }
+        };
 
-        // --- LÓGICA DE CRUD E MODAIS ---
-        function deleteItem(type, id) {
+        // --- LÓGICA DE FIREBASE (GRAVAR E DELETAR) ---
+        window.deleteItem = async function(type, id) {
             if (confirm('Tem a certeza de que deseja excluir?')) {
-                if (type === 'client') clients = clients.filter(c => c.id !== id);
-                if (type === 'appointment') appointments = appointments.filter(a => a.id !== id);
-                if (type === 'inventory') inventory = inventory.filter(i => i.id !== id);
-                renderAllAdminViews();
+                const collectionName = type === 'client' ? 'clients' : type === 'appointment' ? 'appointments' : 'inventory';
+                await deleteDoc(doc(db, collectionName, id.toString()));
             }
-        }
+        };
 
-        function openModal(type, id = null) {
-            currentModalType = type;
-            currentEditingId = id;
+        window.openModal = function(type, id = null) {
+            window.currentModalType = type;
+            window.currentEditingId = id;
             
             const modal = document.getElementById('app-modal');
             const form = document.getElementById('dynamic-form');
@@ -598,14 +702,13 @@
             let item = null;
             if (id) {
                 title.innerText = "Editar " + (type === 'client' ? 'Cliente' : type === 'appointment' ? 'Agendamento' : 'Item de Estoque');
-                if(type==='client') item = clients.find(c=>c.id===id);
-                if(type==='appointment') item = appointments.find(a=>a.id===id);
-                if(type==='inventory') item = inventory.find(i=>i.id===id);
+                if(type==='client') item = window.clients.find(c=>c.id===id);
+                if(type==='appointment') item = window.appointments.find(a=>a.id===id);
+                if(type==='inventory') item = window.inventory.find(i=>i.id===id);
             } else {
                 title.innerText = "Novo " + (type === 'client' ? 'Cliente' : type === 'appointment' ? 'Agendamento' : 'Item de Estoque');
             }
 
-            // Constrói o HTML do formulário baseado no type
             let formHTML = '';
 
             if (type === 'client') {
@@ -618,7 +721,7 @@
             } 
             else if (type === 'appointment') {
                 let clientOptions = `<option value="">Selecione um cliente...</option>`;
-                clients.forEach(c => clientOptions += `<option value="${c.id}" ${item?.clientId == c.id ? 'selected' : ''}>${c.name}</option>`);
+                window.clients.forEach(c => clientOptions += `<option value="${c.id}" ${item?.clientId == c.id ? 'selected' : ''}>${c.name}</option>`);
                 
                 formHTML = `
                     <div><label class="block text-sm font-medium text-zinc-400 mb-1">Cliente</label><select required name="clientId" class="w-full bg-zinc-950 border border-zinc-700 rounded-lg px-4 py-2 text-white outline-none focus:border-pink-500">${clientOptions}</select></div>
@@ -656,47 +759,47 @@
             }
 
             formHTML += `
-                <div class="pt-4 flex justify-end gap-3">
+                <div class="pt-6 flex justify-end gap-3">
                     <button type="button" onclick="closeModal()" class="px-4 py-2 text-zinc-400 hover:text-white">Cancelar</button>
-                    <button type="submit" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-lg font-medium">Salvar</button>
+                    <button type="submit" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-lg font-medium shadow-[0_0_10px_rgba(236,72,153,0.4)]">Salvar Alterações</button>
                 </div>
             `;
 
             form.innerHTML = formHTML;
             modal.classList.remove('hidden');
-        }
+        };
 
-        function closeModal() {
+        window.closeModal = function() {
             document.getElementById('app-modal').classList.add('hidden');
-            currentModalType = '';
-            currentEditingId = null;
-        }
+            window.currentModalType = '';
+            window.currentEditingId = null;
+        };
 
-        function handleFormSubmit(e) {
+        window.handleFormSubmit = async function(e) {
             e.preventDefault();
             const formData = new FormData(e.target);
-            const id = currentEditingId || Date.now();
+            const id = window.currentEditingId || Date.now().toString();
 
-            if (currentModalType === 'client') {
-                const data = { id, name: formData.get('name'), phone: formData.get('phone'), email: formData.get('email'), notes: formData.get('notes') };
-                if (currentEditingId) clients = clients.map(c => c.id === id ? data : c);
-                else clients.push(data);
+            let collectionName = '';
+            let data = {};
+
+            if (window.currentModalType === 'client') {
+                collectionName = 'clients';
+                data = { name: formData.get('name'), phone: formData.get('phone'), email: formData.get('email'), notes: formData.get('notes') };
             } 
-            else if (currentModalType === 'appointment') {
-                const data = { id, clientId: parseInt(formData.get('clientId')), date: formData.get('date'), time: formData.get('time'), description: formData.get('description'), price: formData.get('price'), status: formData.get('status') };
-                if (currentEditingId) appointments = appointments.map(a => a.id === id ? data : a);
-                else appointments.push(data);
+            else if (window.currentModalType === 'appointment') {
+                collectionName = 'appointments';
+                data = { clientId: formData.get('clientId'), date: formData.get('date'), time: formData.get('time'), description: formData.get('description'), price: formData.get('price'), status: formData.get('status') };
             }
-            else if (currentModalType === 'inventory') {
-                const data = { id, name: formData.get('name'), category: formData.get('category'), quantity: parseInt(formData.get('quantity')), minQuantity: parseInt(formData.get('minQuantity')) };
-                if (currentEditingId) inventory = inventory.map(i => i.id === id ? data : i);
-                else inventory.push(data);
+            else if (window.currentModalType === 'inventory') {
+                collectionName = 'inventory';
+                data = { name: formData.get('name'), category: formData.get('category'), quantity: parseInt(formData.get('quantity')), minQuantity: parseInt(formData.get('minQuantity')) };
             }
 
-            closeModal();
-            renderAllAdminViews(); // Atualiza a tela
-        }
-
+            // SALVA DIRETO NA NUVEM!
+            await setDoc(doc(db, collectionName, id.toString()), data);
+            window.closeModal();
+        };
     </script>
 </body>
 </html>
